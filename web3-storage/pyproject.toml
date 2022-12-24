@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "web3-storage"
+version = "0.1.0"
+description = ""
+authors = ["cofob <cofob@riseup.net>"]
+readme = "README.md"
+packages = [{include = "web3_storage"}]
+
+[tool.poetry.scripts]
+web3-storage = "web3_storage.__main__:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+prometheus-client = "^0.15.0"
+requests = "^2.28.1"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
